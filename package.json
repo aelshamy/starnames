@@ -1,10 +1,12 @@
 {
   "name": "starnames",
-  "version": "1.2.0-beta.0",
+  "version": "0.0.0-semantically-released",
   "description": "Get random Star Wars names",
   "main": "src/index.js",
   "scripts": {
-    "test": "mocha src/index.test.js -w"
+    "commit":"git-cz",
+    "test": "mocha src/index.test.js -w",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "keywords": [
     "random",
@@ -18,14 +20,20 @@
   },
   "devDependencies": {
     "chai": "3.4.1",
-    "mocha": "2.3.4"
+    "commitizen": "2.4.6",
+    "cz-conventional-changelog": "1.1.5",
+    "mocha": "2.3.4",
+    "semantic-release": "^4.3.5"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/aelshamy/starnames.git"
+    "url": "https://github.com/aelshamy/starnames.git"
   },
   "bugs": {
     "url": "https://github.com/aelshamy/starnames/issues"
   },
-  "homepage": "https://github.com/aelshamy/starnames#readme"
+  "homepage": "https://github.com/aelshamy/starnames#readme",
+  "czConfig":{
+    "path":"node_modules/cz-conventional-changelog"
+  }
 }

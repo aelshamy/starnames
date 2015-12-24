@@ -17,6 +17,14 @@ describe("starnames", function() {
             expect(starwar.all).to.include('Luke Skywalker');
         });
 
+        it("should have at least 5 names starts with 'J'", function() {
+        	var items = starwar.all.filter(function(item){
+        		return item.substring(0,1) === 'Z'
+        	})
+        	expect(items).to.have.length.of.at.least(5);
+        	
+        });
+
 
     });
 
@@ -27,4 +35,6 @@ describe("starnames", function() {
         });
 
     });
+
+
 });
