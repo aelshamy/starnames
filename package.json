@@ -33,7 +33,9 @@
     "url": "https://github.com/aelshamy/starnames/issues"
   },
   "homepage": "https://github.com/aelshamy/starnames#readme",
-  "czConfig":{
+  "config":{
+    "commitizen":{
     "path":"node_modules/cz-conventional-changelog"
+    }
   }
 }
