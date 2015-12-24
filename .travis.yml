@@ -9,15 +9,14 @@ node_js:
   - '4'
 before_install:
   - npm i -g npm@^2.0.0
-  # - pip install codecov
 before_script:
   - npm prune
 script:
   - npm run 
+  - npm run test
   - npm run check-coverage
   - npm run build
 after_success:
-  # - codecov
   - npm run report-coverage
   - npm run semantic-release
 branches:
