@@ -18,11 +18,11 @@ describe("starnames", function() {
         });
 
         it("should have at least 5 names starts with 'J'", function() {
-        	var items = starWars.all.filter(function(item){
-        		return item.substring(0,1) === 'J'
-        	})
-        	expect(items).to.have.length.of.at.least(5);
-        	
+            var items = starWars.all.filter(function(item) {
+                return item.substring(0, 1) === 'J'
+            })
+            expect(items).to.have.length.of.at.least(5);
+
         });
 
 
@@ -37,7 +37,7 @@ describe("starnames", function() {
             var randomItems = starWars.random(3);
             expect(randomItems).to.have.length(3);
 
-            randomItems.forEach(function(item){
+            randomItems.forEach(function(item) {
                 expect(starWars.all).to.include(item);
             })
         });
