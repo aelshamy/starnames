@@ -17,8 +17,8 @@ script:
   - npm run check-coverage
   - npm run build
 after_success:
-  - codecov
-  # - npm run report-coverage
+  # - codecov
+  - npm run report-coverage
   - npm run semantic-release
 branches:
   except:
