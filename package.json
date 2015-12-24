@@ -1,6 +1,6 @@
 {
-  "name": "starwars-names",
-  "version": "1.0.0",
+  "name": "starnames",
+  "version": "1.1.0",
   "description": "Get random Star Wars names",
   "main": "src/index.js",
   "scripts": {
@@ -11,9 +11,18 @@
     "star",
     "wars"
   ],
-  "author": "Amr Hussien <amr-hussien@hotmail.com> (https://github.com/aelshamy)",
+  "author": "Ajmoro <amr-hussien@hotmail.com> (https://github.com/aelshamy)",
   "license": "MIT",
   "dependencies": {
     "unique-random-array": "1.0.0"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aelshamy/starnames.git"
+  },
+  "bugs": {
+    "url": "https://github.com/aelshamy/starnames/issues"
+  },
+  "homepage": "https://github.com/aelshamy/starnames#readme"
 }
