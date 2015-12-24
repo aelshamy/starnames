@@ -1,42 +1,45 @@
 {
-  "name": "starnames",
-  "version": "0.0.0-semantically-released",
-  "description": "Get random Star Wars names",
-  "main": "src/index.js",
-  "scripts": {
-    "commit":"git-cz",
-    "testing": "mocha src/index.test.js -w",
-    "test": "mocha src/index.test.js",
-    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
-  },
-  "keywords": [
-    "random",
-    "star",
-    "wars"
-  ],
-  "author": "Ajmoro <amr-hussien@hotmail.com> (https://github.com/aelshamy)",
-  "license": "MIT",
-  "dependencies": {
-    "unique-random-array": "1.0.0"
-  },
-  "devDependencies": {
-    "chai": "3.4.1",
-    "commitizen": "2.4.6",
-    "cz-conventional-changelog": "1.1.5",
-    "mocha": "2.3.4",
-    "semantic-release": "^4.3.5"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/aelshamy/starnames.git"
-  },
-  "bugs": {
-    "url": "https://github.com/aelshamy/starnames/issues"
-  },
-  "homepage": "https://github.com/aelshamy/starnames#readme",
-  "config":{
-    "commitizen":{
-    "path":"node_modules/cz-conventional-changelog"
+    "name": "starnames",
+    "version": "0.0.0-semantically-released",
+    "description": "Get random Star Wars names",
+    "main": "src/index.js",
+    "scripts": {
+        "commit": "git-cz",
+        "testing": "mocha src/index.test.js -w",
+        "test": "mocha src/index.test.js",
+        "semantic-release": "semantic-release pre && npm publish && semantic-release post"
+    },
+    "keywords": [
+        "random",
+        "star",
+        "wars"
+    ],
+    "author": "Ajmoro <amr-hussien@hotmail.com> (https://github.com/aelshamy)",
+    "license": "MIT",
+    "dependencies": {
+        "unique-random-array": "1.0.0"
+    },
+    "devDependencies": {
+        "chai": "3.4.1",
+        "commitizen": "2.4.6",
+        "cz-conventional-changelog": "1.1.5",
+        "mocha": "2.3.4",
+        "semantic-release": "^4.3.5"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/aelshamy/starnames.git"
+    },
+    "bugs": {
+        "url": "https://github.com/aelshamy/starnames/issues"
+    },
+    "homepage": "https://github.com/aelshamy/starnames#readme",
+    "config": {
+        "commitizen": {
+            "path": "node_modules/cz-conventional-changelog"
+        },
+        "ghooks": {
+            "pre-commit": "npm run test"
+        }
     }
-  }
 }
